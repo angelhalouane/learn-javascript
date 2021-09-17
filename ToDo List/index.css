@@ -1,0 +1,108 @@
+/*page's body*/
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #928dd3 0%, #e9eef5 100%);
+}
+
+/*whole todo box*/
+.todoListBox {
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    height: 50%;
+    margin: 120px auto;
+    border: 3px skyblue;
+    border-radius: 4px;
+    padding: 20px;
+    position: fixed;
+    top: 5%;
+    left: 20%;
+}
+
+/*todo box's header*/
+.todoListBox header {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:30px;
+}
+
+/*add item input*/
+.todoListBox .inputBox input {
+    border-radius: 6px;
+    height: 40px;
+    width: 75%;
+    position: absolute;
+    left: 110px;
+    top: 22vmax;
+}
+.todoListBox .inputBox input:hover {
+    background-color: rgba(190, 190, 219, 0.331);
+}
+
+/*plus button*/
+.todoListBox .inputBox button {
+    background-color: rgba(151, 151, 193, 0.831);
+    margin: auto;
+    height: 45px;
+    width: 70px;
+    border-radius: 6px;
+    color: #ffff;
+    font-size: 25px;
+    position: absolute;
+    left: 800px;
+    top: 22vmax;
+    outline: none;
+    cursor: pointer;
+}
+.todoListBox .inputBox button:hover {
+    background-color: rgb(145, 145, 224);
+}
+.todoListBox .inputBox button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*the whole list of tasks box*/
+.todoListBox .checkBox {
+    max-height: 225px;
+    overflow-y: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*todo board*/
+.checkBox li {
+    list-style-type: none; 
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: rgba(137, 147, 155, 0.207);
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+.checkBox li:hover {
+    background-color: lightgray;
+}
+
+/*bin*/
+.checkBox li i {
+    color:rgb(255, 255, 255);
+    position: absolute;
+    right: 3px;
+    width: 70px;
+    top:15px;
+    cursor: pointer;
+}
+
+/*bin box*/
+.checkBox li span {
+    position: absolute;
+    right: 0px;
+    height:45px;
+    width: 76px;
+    text-align: center;
+    border-radius: 6px;
+    background:rgb(177, 139, 153);
+    cursor: pointer;
+}
+.checkBox li span:hover {
+    background-color:rgba(255, 0, 0, 0.536);
+}
