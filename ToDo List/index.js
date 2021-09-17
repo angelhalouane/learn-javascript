@@ -2,7 +2,7 @@ const inputBox = document.querySelector(".inputBox input"); //call the user's in
 const plusButton = document.querySelector(".inputBox button"); //call the plus button
 const checkBox = document.querySelector(".checkBox"); //call the check list box
  
-showEverything(); //call the show everything function
+loopTaskInArray(); //call the loop function to show each task in the array
  
 plusButton.onclick = ()=>{ //when user click on plus button
   let inputValue = inputBox.value; //create a variable to obtain user's input value
@@ -14,10 +14,10 @@ plusButton.onclick = ()=>{ //when user click on plus button
   }
   taskArr.push(inputValue); //adding new value into the task array
   localStorage.setItem("Here is new task", JSON.stringify(taskArr)); //transform java script object into a json string
-  showEverything(); //calling the show everything function at the end
+  loopTaskInArray(); //call the loop function to show each task in the array
 }
  
-function showEverything() {
+function loopTaskInArray() {
   let obtainLsData = localStorage.getItem("Here is new task"); //create a variable to obtain local storage data
   if (obtainLsData == null) { //if local storage has no data
     taskArr = []; //create an empty array
@@ -38,5 +38,5 @@ function removeTask(index) {
   taskArr = JSON.parse(obtainLsData); //transform json string into a js object
   taskArr.splice(index, 1); //remove the task the array at the given input
   localStorage.setItem("Here is new task", JSON.stringify(taskArr)); //transform java script object into a json string
-  showEverything(); //call the showEverything function
+  loopTaskInArray(); //call the loop function to show each task in the array
 }
