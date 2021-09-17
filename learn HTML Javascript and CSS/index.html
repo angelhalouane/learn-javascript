@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0">
+    <meta charset=“UTF-8”>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h2>Dani and Angel's Calculator</h2>
+    <div id="calculatorBox">
+      <div>
+        <div>
+          first value: <input type="number" id="firstInput"/>
+        </div>
+        <div>
+          second value: <input type="number" id="secondInput"/>
+        </div>
+      </div>
+      <div>
+        <span class="italics">operators:</span>
+        <button class="operationButton" onclick="addOp()" id="addButton">+</button>
+        <button class="operationButton" onclick="subOp()" id=subButton>-</button>
+        <button class="operationButton" onclick="multOp()" id= mulButton">x</button>
+        <button class="operationButton" onclick="divOp()" id=subButton>/</button>
+      </div>
+      <div>
+        <div>
+          <span class="underline italics">result:</span>
+          <input id="result" disabled></input> 
+        </div>
+        <div>
+        <button style="margin-top: 10px" onclick="refreshOp()">reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

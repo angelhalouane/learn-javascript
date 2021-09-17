@@ -1,0 +1,21 @@
+#calculatorBox {
+    background-color: #a3a3d4;
+    width: 30%;
+    margin: auto;
+    border: 1px solid red;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.operationButton {
+    width: 24px;
+    height: 24px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italics {
+    font-style: italic;
+}
