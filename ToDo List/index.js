@@ -2,8 +2,8 @@ const inputBox = document.querySelector(".inputBox input"); //call the user's in
 const plusButton = document.querySelector(".inputBox button"); //call the plus button
 const checkBox = document.querySelector(".checkBox"); //call the check list box
  
-loopTaskInArray(); //call the loop function to show each task in the array
- 
+loopTaskInArray(); //call the loop function to show each task in the array  
+
 plusButton.onclick = ()=>{ //when user click on plus button
   let inputValue = inputBox.value; //create a variable to obtain user's input value
   let obtainLsData = localStorage.getItem("Here is new task"); //create a variable to obtain local storage data
@@ -40,3 +40,4 @@ function removeTask(index) {
   localStorage.setItem("Here is new task", JSON.stringify(taskArr)); //transform java script object into a json string
   loopTaskInArray(); //call the loop function to show each task in the array
 }
+

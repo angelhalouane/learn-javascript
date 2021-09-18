@@ -25,6 +25,12 @@ body{
     font-size:30px;
 }
 
+.todoListBox header i {
+    color: rgb(105, 96, 168);
+    position: relative;
+    left: -5px;
+}
+
 /*add item input*/
 .todoListBox .inputBox input {
     border-radius: 6px;
